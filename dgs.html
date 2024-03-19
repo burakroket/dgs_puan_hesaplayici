@@ -1,0 +1,73 @@
+<html>
+<body>
+<head>
+	<meta charset="utf-8">
+</head>
+
+<!--form-->
+    <center><br><br><br>
+    <table border="1">
+    <form action="hesapla.php" method="post" target="_blank">
+        <tr style="height:10px;">
+            <td align="center" colspan="3"><b>DGS Puanmatik</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center">Doğru</td> 
+            <td align="center">Yanlış</td> 
+        </tr>
+		<tr>
+            <td>Sayısal Testi</td>
+			<td align="center"><input type="text" name="html_sayisal_dogru" size="2"></td>
+			<td align="center"><input type="text" name="html_sayisal_yanlis" size="2"></td>
+        </tr>
+		<tr>
+            <td>Sözel Testi</td>
+			<td align="center"><input type="text" name="html_sozel_dogru" size="2"></td>
+			<td align="center"><input type="text" name="html_sozel_yanlis" size="2"></td>
+        </tr>
+		<tr>
+            <td>Önlisans Başarı Puanı (Zorunlu Alan)</td>
+			<td align="center"><input type="text" name="html_onlisans_puani" size="2"></td>
+        </tr>
+		<tr>
+            <td>Alanınız</td>
+			<td colspan="2" align="center">
+				<input type="radio" name="html_alan" value="html_alan_sayisal">Sayısal
+				<input type="radio" name="html_alan" value="html_alan_sozel">Sözel
+				<input type="radio" name="html_alan" value="html_alan_esitagirlik">Eşit Ağırlık
+			</td>
+        </tr>
+		<tr>
+            <td>2019 öncesinde DGS ile bir programa yerleştirildiniz mi?</td>
+			<td colspan="2" align="center">
+				<input type="radio" name="html_dgs_tarih" value="html_dgs_oncesi">Evet
+				<input type="radio" name="html_dgs_tarih" value="html_dgs_sonrasi">Hayır
+        </tr>
+		<tr>
+			<td colspan="3" align="center">
+				<input type="submit" value="Hesapla">
+				<input type="reset" value="Temizle">
+			</td>
+		</tr>
+	</form>
+    </table>
+    </center>
+</body>
+</html>
+
+<!--css-->
+<style>
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+	tr {
+  height:50px;
+}
+	table {
+	border: 1px solid black;
+  border-collapse: collapse;
+	width:50%;
+}
+</style>
